@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Gerador de senha" content="Gerador de senha, Generator Passoword"
+    <title>Gerador de senha</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <img class="logo" src="https://i.ibb.co/m8YvYBr/logo.png" alt="Gerador de senha logo" />
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres </span>
+        <input id="slider" class="slider" type="range" min="8" max="20" value="14"/>
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+    </main>
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="tittle">Sua senha gerada foi:</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">Clique na senha para copiar!</span>
+    </div>
+    <script src="script.js"> </script>
+
+    <div class="navbar">
+        <div class="box">
+            <div class="icon instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <p>Instagram</p>
+        </div>
+
+        <div class="box">
+            <div class="icon whatsapp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <p>Whatsapp</p>
+        </div>
+
+        <div class="box">
+            <div class="icon facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <p>Facebook</p>
+        </div>
+
+        <div class="box">
+            <div class="icon twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <p>Twitter</p>
+        </div>
+    </div>
+
+</body>
+</html>
